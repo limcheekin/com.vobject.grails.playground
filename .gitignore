@@ -3,3 +3,5 @@
 *.*~
 target
 plugins
+test/reports
+lib
