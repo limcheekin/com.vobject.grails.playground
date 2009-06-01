@@ -7,4 +7,6 @@ security {
 	loginUserDomainClass = "User"
 	authorityDomainClass = "Role"
 	requestMapClass = "RequestMap"
+	
+	security.defaultRole = "USER_ROLE"
 }
