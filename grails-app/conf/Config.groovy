@@ -32,6 +32,10 @@ grails.converters.encoding="UTF-8"
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
 
+// CodeNarc settings
+codenarc.reportName="target/codenarc-report.html"
+codenarc.extraIncludeDirs=['test']
+
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
