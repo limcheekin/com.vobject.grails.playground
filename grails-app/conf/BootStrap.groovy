@@ -2,6 +2,10 @@ class BootStrap {
     def authenticateService
 
     def init = { servletContext ->
+        // initAcegi()  
+    }
+     
+    def initAcegi() {
         //Adding Roles
         def roleAdmin = new Role(authority:'ROLE_ADMIN', description:'Admin User').save()
         def roleUser = new Role(authority:'ROLE_USER', description:'Application User').save()     
@@ -15,7 +19,7 @@ class BootStrap {
         //Note that here we associate users with their respective roles
         roleAdmin.addToPeople(userAdmin)
         roleUser.addToPeople(userAdmin)
-        roleUser.addToPeople(user1)        
+        roleUser.addToPeople(user1)          
     }
      
     def destroy = {
